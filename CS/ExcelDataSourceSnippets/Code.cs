@@ -39,5 +39,18 @@ namespace ExcelDataSourceSnippets
             excelSourceOptions.SkipHiddenColumns = false;
             excelDataSource.SourceOptions = excelSourceOptions;
         }
+
+        public static ExcelDataSource CreateExcelDataSource()
+        {
+            var excelDataSource = new ExcelDataSource() { Name = "Excel_Products" };
+            excelDataSource.FileName = "Products.xlsx";
+            excelDataSource.SourceOptions = new ExcelSourceOptions()
+            {
+                ImportSettings = new ExcelWorksheetSettings("Sheet"),
+            };
+            excelDataSource.RebuildResultSchema();
+            return excelDataSource;
+        }
+
     }
 }

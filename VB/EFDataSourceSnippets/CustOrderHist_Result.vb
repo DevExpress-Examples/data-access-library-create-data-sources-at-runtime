@@ -11,8 +11,8 @@
 
 Namespace EFDataSourceSnippets
 
-    Partial Public Class CustOrderHist_Result
-        Public Property ProductName() As String
-        Public Property Total() As Integer?
-    End Class
+	Partial Public Class CustOrderHist_Result
+		Public Property ProductName() As String
+		Public Property Total() As Integer?
+	End Class
 End Namespace

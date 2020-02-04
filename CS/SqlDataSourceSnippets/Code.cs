@@ -71,5 +71,19 @@ namespace SqlDataSourceSnippets
             DataSource.Queries.AddRange(new SqlQuery[] { categories, products });
             DataSource.Relations.Add(new MasterDetailInfo("Categories", "Products", "CategoryID", "CategoryID"));
         }
+
+        public static SqlDataSource CreateSqlDataSource()
+        {
+            MsSqlConnectionParameters connectionParameters = new MsSqlConnectionParameters(".", "NorthWind", null, null, MsSqlAuthorizationType.Windows);
+            var sqlDataSource = new SqlDataSource(connectionParameters) { Name = "Sql_Categories" };
+            var categoriesQuery = SelectQueryFluentBuilder.AddTable("Categories").
+                SelectAllColumnsFromTable().
+                Build("Categories");
+            sqlDataSource.Queries.Add(categoriesQuery);
+            sqlDataSource.RebuildResultSchema();
+            return sqlDataSource;
+        }
+
+
     }
 }

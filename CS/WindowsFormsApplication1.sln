@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataSourceSnippets", "SqlDataSourceSnippets\SqlDataSourceSnippets.csproj", "{41F3A069-6D8E-433A-B46E-7B183F202B95}"
 EndProject
@@ -9,6 +9,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectDataSourceSnippets", "ObjectDataSourceSnippets\ObjectDataSourceSnippets.csproj", "{D4F6A64E-0A57-4A28-BEB9-CE72AEDFCFDC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDataSourceSnippets", "ExcelDataSourceSnippets\ExcelDataSourceSnippets.csproj", "{F7C9B0A9-80F2-43EF-801F-0984DC2F3B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDataSourceSnippets", "JsonDataSourceSnippets\JsonDataSourceSnippets.csproj", "{F81F8A52-7D4B-4871-974E-183872FAACEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FederationDataSourceSnippets", "FederationDataSourceSnippets\FederationDataSourceSnippets.csproj", "{7BA0DFB0-C4FD-4F17-AFBB-78BE20BB21C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,8 +36,19 @@ Global
 		{F7C9B0A9-80F2-43EF-801F-0984DC2F3B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7C9B0A9-80F2-43EF-801F-0984DC2F3B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7C9B0A9-80F2-43EF-801F-0984DC2F3B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81F8A52-7D4B-4871-974E-183872FAACEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81F8A52-7D4B-4871-974E-183872FAACEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81F8A52-7D4B-4871-974E-183872FAACEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81F8A52-7D4B-4871-974E-183872FAACEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BA0DFB0-C4FD-4F17-AFBB-78BE20BB21C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA0DFB0-C4FD-4F17-AFBB-78BE20BB21C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA0DFB0-C4FD-4F17-AFBB-78BE20BB21C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA0DFB0-C4FD-4F17-AFBB-78BE20BB21C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E554AF08-3C1E-4D3C-A5F4-7631070DE73D}
 	EndGlobalSection
 EndGlobal

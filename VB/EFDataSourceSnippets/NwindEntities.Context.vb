@@ -15,23 +15,23 @@ Imports System
 
 Namespace EFDataSourceSnippets
 
-    Partial Public Class NorthwindEntities
-        Inherits DbContext
+	Partial Public Class NorthwindEntities
+		Inherits DbContext
 
-        Public Sub New()
-            MyBase.New("name=NorthwindEntities")
-        End Sub
+		Public Sub New()
+			MyBase.New("name=NorthwindEntities")
+		End Sub
 
-        Protected Overrides Sub OnModelCreating(ByVal modelBuilder As DbModelBuilder)
-            Throw New UnintentionalCodeFirstException()
-        End Sub
+		Protected Overrides Sub OnModelCreating(ByVal modelBuilder As DbModelBuilder)
+			Throw New UnintentionalCodeFirstException()
+		End Sub
 
-        Public Overridable Property Categories() As DbSet(Of Category)
+		Public Overridable Property Categories() As DbSet(Of Category)
 
-        Public Overridable Function CustOrderHist(ByVal customerID As String) As ObjectResult(Of CustOrderHist_Result)
-            Dim customerIDParameter = If(customerID IsNot Nothing, New ObjectParameter("CustomerID", customerID), New ObjectParameter("CustomerID", GetType(String)))
+		Public Overridable Function CustOrderHist(ByVal customerID As String) As ObjectResult(Of CustOrderHist_Result)
+			Dim customerIDParameter = If(customerID IsNot Nothing, New ObjectParameter("CustomerID", customerID), New ObjectParameter("CustomerID", GetType(String)))
 
-            Return DirectCast(Me, IObjectContextAdapter).ObjectContext.ExecuteFunction(Of CustOrderHist_Result)("CustOrderHist", customerIDParameter)
-        End Function
-    End Class
+			Return DirectCast(Me, IObjectContextAdapter).ObjectContext.ExecuteFunction(Of CustOrderHist_Result)("CustOrderHist", customerIDParameter)
+		End Function
+	End Class
 End Namespace
