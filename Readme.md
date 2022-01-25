@@ -16,8 +16,7 @@
 # How to Create the Data Access Library Data Sources at Runtime
 
 
-This code example illustrates the functionality described in the [How to create Data Access Library data sources at runtime](https://www.devexpress.com/Support/Center/Question/Details/T423404/) Knowledge Base article.
-
+This code example illustrates the functionality described in the [Data Sources](https://docs.devexpress.com/CoreLibraries/403632/devexpress-data-library/data-sources) documentation section
 <br/>
 
 
