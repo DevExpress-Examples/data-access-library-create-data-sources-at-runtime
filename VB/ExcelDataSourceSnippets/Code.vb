@@ -1,20 +1,15 @@
-﻿Imports DevExpress.DataAccess.Excel
-Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
-Imports System.Threading.Tasks
+Imports DevExpress.DataAccess.Excel
 
 Namespace ExcelDataSourceSnippets
+
     Public Class Code
 
         Private Sub ExcelDataSourceBindingToCSV()
             ' Create a new Excel data source.
-            Dim excelDataSource As New ExcelDataSource()
+            Dim excelDataSource As ExcelDataSource = New ExcelDataSource()
             excelDataSource.FileName = "Northwind.csv"
-
             ' Specify import settings.
-            Dim csvSourceOptions As New CsvSourceOptions()
+            Dim csvSourceOptions As CsvSourceOptions = New CsvSourceOptions()
             csvSourceOptions.DetectEncoding = True
             csvSourceOptions.DetectNewlineType = True
             csvSourceOptions.DetectValueSeparator = True
@@ -23,15 +18,13 @@ Namespace ExcelDataSourceSnippets
 
         Private Sub ExcelDataSourceBindingToXLS()
             ' Create a new Excel data source.
-            Dim excelDataSource As New ExcelDataSource()
+            Dim excelDataSource As ExcelDataSource = New ExcelDataSource()
             excelDataSource.FileName = "Northwind.xlsx"
-
             ' Select a required worksheet.
-            Dim excelWorksheetSettings As New ExcelWorksheetSettings()
+            Dim excelWorksheetSettings As ExcelWorksheetSettings = New ExcelWorksheetSettings()
             excelWorksheetSettings.WorksheetName = "Sheet_Categories"
-
             ' Specify import settings.
-            Dim excelSourceOptions As New ExcelSourceOptions()
+            Dim excelSourceOptions As ExcelSourceOptions = New ExcelSourceOptions()
             excelSourceOptions.ImportSettings = excelWorksheetSettings
             excelSourceOptions.SkipHiddenRows = False
             excelSourceOptions.SkipHiddenColumns = False
