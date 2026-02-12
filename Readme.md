@@ -32,7 +32,7 @@ This code example includes code snippets that shows how to create various data s
 - [Dashboard for WinForms - How to Bind a Dashboard to the JSON Data Source at Runtime](https://github.com/DevExpress-Examples/winforms-dashboard-json-data-source)
 - [Dashboard for ASP.NET Core - How to Register a Federated Data Source](https://github.com/DevExpress-Examples/aspnet-core-dashboard-data-federation)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=data-access-library-create-data-sources-at-runtime&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=data-access-library-create-data-sources-at-runtime&~~~was_helpful=no)
 
